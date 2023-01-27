@@ -1,0 +1,52 @@
+.contentsDivClass {
+    background-color: rgb(184,255,151);
+    font-size: 20px;
+    
+    }
+
+
+.contentsFlex {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+   
+}
+
+.contentsFlexImg {
+    flex: 0 0 auto;
+    width: 30%;
+    padding-bottom: 20px;
+    margin-left: 95px;
+    margin-top: 50px;
+}
+.headerText h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 95px;
+}
+.headerText h5 {
+    
+    font-size: 20px;
+    margin-left: 95px;
+   
+
+}
+.contentsFlexTxt {
+    flex: 1 1 auto;
+    width: 200%;
+    padding: 50px;
+    font-size: 19px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.buttonFooter {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+
+}
+.videoFooter {
+    padding: 14px;
+}
+
