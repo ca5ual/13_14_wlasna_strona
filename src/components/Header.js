@@ -1,7 +1,8 @@
 import React, {Component} from "react";
-import { Button, Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from './Vector.png'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import './Header.css'
 
 import Home from '../pages/Home'
 import About from '../pages/About';
@@ -33,11 +34,7 @@ export default class Header extends Component {
                             <Nav.Link href="/blog">Nasz Blog</Nav.Link>
                             <Nav.Link href="/video">Video</Nav.Link>
                         </Nav>
-                        <Form className='d-flex'>
-                            <FormControl type = "text" placeholder="Search"
-                            className ="me-sm-2" />
-                        <Button variant ="outline-info">Search</Button>
-                        </Form>
+                        
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

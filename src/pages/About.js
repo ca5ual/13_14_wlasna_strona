@@ -4,6 +4,14 @@ import { Container, Nav, Tab, Row, Col } from "react-bootstrap";
 
 export default class About extends Component {
     render () {
+        const clickTab = () => console.log("Click");
+        const move = () => console.log ("Move");
+        const leave = () => console.log ("MouseLeave");
+        const down = () => console.log ("MouseDown");
+        const enter = () => console.log ("MouseEnter");
+        const focus = () => console.log ("Focuse")
+
+
         return (
             <Container sticky="top">
                 <Tab.Container id = "ledt-tabs-example" defaultActiveKey="first">
@@ -11,7 +19,15 @@ export default class About extends Component {
                         <Col sm = {3}>
                             <Nav variant = "pills" className = "flex-column mt-2">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Właściciele</Nav.Link>
+                                    <Nav.Link eventKey="first"
+                                    onClick={clickTab}
+                                    onMouseMove = {move}
+                                    onMouseLeave = {leave}
+                                    onMouseDown = {down}
+                                    onMouseEnter = {enter}
+                                    onFocus = {focus}
+                                    
+                                    >Właściciele</Nav.Link>
                                     </Nav.Item>
                                     
                                     <Nav.Item>
